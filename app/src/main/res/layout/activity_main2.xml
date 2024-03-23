@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="0dp">
+
+        <!-- Image (barre) en haut de l'application -->
+        <ImageView
+            android:id="@+id/ivTopBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/votre_barre"
+            android:scaleType="centerCrop"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true" />
+
+        <!-- Image en dessous de la barre -->
+
+        <!-- TextView for Email -->
+        <ImageView
+            android:id="@+id/ivBelowTopBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivTopBar"
+            android:layout_marginTop="14dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/email_icon" />
+
+        <TextView
+            android:id="@+id/tvEmailLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivBelowTopBar"
+            android:layout_marginTop="16dp"
+            android:text="Email:" />
+
+        <!-- EditText for Email -->
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvEmailLabel"
+            android:layout_marginTop="9dp"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress" />
+
+        <!-- TextView for Password -->
+        <TextView
+            android:id="@+id/tvPasswordLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etEmail"
+            android:layout_marginTop="21dp"
+            android:text="Mot de passe:" />
+
+        <!-- EditText for Password -->
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvPasswordLabel"
+            android:layout_marginTop="8dp"
+            android:hint="Mot de passe"
+            android:inputType="textPassword" />
+
+        <!-- Button for Login -->
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etPassword"
+            android:layout_marginTop="16dp"
+            android:text="Se connecter"
+            android:backgroundTint="@color/blue"
+            />
+
+        <!-- CheckBox for Remember Me -->
+
+        <!-- TextView for Forgot Password -->
+
+        <CheckBox
+            android:id="@+id/cbRememberMe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnLogin"
+            android:layout_marginTop="12dp"
+            android:text="Garder ma session active" />
+
+        <TextView
+            android:id="@+id/tvForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cbRememberMe"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="Mot de passe oublié?"
+            android:textColor="#0000FF" />
+
+        <!-- TextView for Register -->
+        <TextView
+            android:id="@+id/tvRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvForgotPassword"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="Vous n'avez pas encore de compte?"
+            />
+
+        <!-- Link for Registration -->
+        <TextView
+            android:id="@+id/tvRegisterLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvRegister"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="Inscrivez-vous ici"
+            android:textColor="#0000FF" />
+    </RelativeLayout>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
